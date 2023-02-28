@@ -2,11 +2,12 @@
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions":{
       "target": "esnext",
-      "baseUrl": ".",
+      "baseUrl": "./",
       "paths": {
-       "*": ["src/*"],
-       "tests": ["tests/*"],
-       "@components/*": ["src/components/*"],
-     },
+        "src/*": ["src/*"],
+        "@common/*": ["src/components/common/*"],
+        "@modules/*": ["src/components/modules/*"]
+      }
   },
+  "include": ["src"],
 }

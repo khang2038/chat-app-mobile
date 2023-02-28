@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { NativeRouter } from 'react-router-native';
+import Router from './src/routes';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello</Text>
-    </View>
+    <NativeRouter>
+      <View style={styles.container}>
+        <Router />
+      </View>
+    </NativeRouter>
   );
 }
 

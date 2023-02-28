@@ -1,9 +1,12 @@
-import React from 'react'
-
+import Logo from '../../components/common/Logo/Logo';
+import React from 'react';
+import { View } from 'react-native';
 const Login = () => {
   return (
-    <div>Login</div>
-  )
-}
+    <View>
+      <Logo />
+    </View>
+  );
+};
 
-export default Login
+export default Login;

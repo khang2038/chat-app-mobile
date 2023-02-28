@@ -1,8 +1,9 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 const Input = () => {
   return (
-    <div>Input</div>
+    <Text>Input</Text>
   )
 }
 
