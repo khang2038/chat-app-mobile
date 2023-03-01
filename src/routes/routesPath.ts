@@ -11,7 +11,7 @@ interface IRoute {
 const routes: IRoute[] = [
   {
     path: '/',
-    component: Login,
+    component: Home,
   },
   {
     path: '/Login',

@@ -19,6 +19,9 @@ const styles = StyleSheet.create({
   button: {
     width: '100%',
     marginVertical: 10,
+    backgroundColor:  '#7269ef',
+    borderColor: '#5b54bf',
+    borderRadius: 40,
   },
   text: {
     fontWeight: 'bold',

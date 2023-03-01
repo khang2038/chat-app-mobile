@@ -1,10 +1,29 @@
-import React from 'react'
-import { Text } from 'react-native'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { TextInput } from 'react-native-paper';
 
-const Input = () => {
+type Props = React.ComponentProps<typeof TextInput>;
+
+const Input = ({ ...props }: Props) => {
   return (
-    <Text>Input</Text>
-  )
-}
+    <View style={styles.container}>
+      <TextInput
+        style={styles.input}
+        underlineColor="transparent"
+        mode="outlined"
+        {...props}
+      />
+    </View>
+  );
+};
 
-export default Input
+const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    marginVertical: 12,
+  },
+  input: {
+    width: 250,
+  },
+});
+export default Input;
