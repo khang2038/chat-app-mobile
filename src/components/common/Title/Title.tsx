@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Title as PaperTitle } from 'react-native-paper';
 
-const Title = () => {
+type Props = React.ComponentProps<typeof PaperTitle>;
+
+const Title= ({ children, ...props }: Props) => {
   return (
-    <div>Title</div>
-  )
-}
-
-export default Title
+    <Title
+      {...props}
+    >
+      {children}
+    </Title>
+  );
+};
+export default Title;
